@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gajjala Pragnesh Reddy's Portfolio</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Typed.js CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.12/dist/typed.umd.js"></script>
+  <!-- Fallback local Typed.js -->
+  <script>
+    if (typeof Typed === 'undefined') {
+      document.write('<script src="js/typed.umd.js"><\/script>');
+    }
+  </script>
+  <!-- ScrollReveal CDN -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Gajjala Pragnesh Reddy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#objective">Objective</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiences">Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificates">Certificates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center" data-section="hero">
+    <div class="container text-center text-white">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="lead">I'm Gajjala Pragnesh Reddy, an <span id="typed-text"></span></p>
+      <div class="mt-3">
+        <a href="#contact" class="btn btn-primary btn-lg me-2">Get in Touch</a>
+        <a href="assets\PragneshResume-asofMay.pdf" class="btn btn-primary btn-lg" download>View Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 reveal" data-section="about">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets\1000103244.png" alt="Profile Picture" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <p>Aspiring AI Engineer eager to apply machine learning expertise to develop innovative solutions. Passionate about
+solving complex problems and driving technological advancements. Committed to contributing to a dynamic team
+and delivering impactful results.</p>
+          <p>Connect with me: <a href="https://www.linkedin.com/in/pragnesh-reddy-g-014242255/">LinkedIn</a> | <a href="https://github.com/itspragnesh">GitHub</a> | <a href="https://leetcode.com/u/Praggy_Reddy/">LeetCode</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-light reveal" data-section="projects">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      
+      <div class="row">
+        <div class="col-md-4 mb-4 project-card" data-category="web ai">
+          <div class="card glass-card">
+            <img src="assets\Medica.png" class="card-img-top" alt="Medica">
+            <div class="card-body">
+              <h5 class="card-title">Medica - A Smart Medical Website</h5>
+              <p class="card-text">Built a smart medical website featuring AI tools like medicine classification, WellBot (AI assistant), and AI-based medical documentation. Includes pharma e-commerce and appointment booking. (MongoDB Atlas, ReactJS, NodeJS, Express)</p>
+              <a href="https://github.com/itspragnesh/Medica" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 project-card" data-category="ai web">
+          <div class="card glass-card">
+            <img src="assets\stego.png" class="card-img-top" alt="Secure Stego">
+            <div class="card-body">
+              <h5 class="card-title">Secure Stego Image Sharing Web App</h5>
+              <p class="card-text">A secure image messaging app using deep learning-based steganography with user auth, stego image transfer, and admin control. (PyTorch, React, Flask, SQLite)</p>
+              <a href="https://github.com/itspragnesh/StegoNet" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 project-card" data-category="ai">
+          <div class="card glass-card">
+            <img src="assets\Lungcancer.png" class="card-img-top" alt="Lung Cancer Classification">
+            <div class="card-body">
+              <h5 class="card-title">Lung Cancer Classification</h5>
+              <p class="card-text">Developed a Flask-based web application to predict lung cancer risk using an XGBoost model, featuring user-friendly, robust input validation, and a visually appealing interface with feature importance visualization. (Python, Flask, Machine Learning)</p>
+              <a href="https://github.com/itspragnesh/Lung-Cancer-Prediction-App" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 reveal" data-section="skills">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="skill-card glass-card text-center p-3">
+            <h4>Python</h4>
+            <div class="progress">
+              <div class="progress-bar bg-primary animate-progress" role="progressbar" style="width: 0%;" data-width="90" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="skill-card glass-card text-center p-3">
+            <h4>React.js</h4>
+            <div class="progress">
+              <div class="progress-bar bg-primary animate-progress" role="progressbar" style="width: 0%;" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="skill-card glass-card text-center p-3">
+            <h4>Machine Learning</h4>
+            <div class="progress">
+              <div class="progress-bar bg-primary animate-progress" role="progressbar" style="width: 0%;" data-width="80" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="skill-card glass-card text-center p-3">
+            <h4>Node.js</h4>
+            <div class="progress">
+              <div class="progress-bar bg-primary animate-progress" role="progressbar" style="width: 0%;" data-width="75" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="skill-card glass-card text-center p-3">
+            <h4>SQL</h4>
+            <div class="progress">
+              <div class="progress-bar bg-primary animate-progress" role="progressbar" style="width: 0%;" data-width="80" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="skill-card glass-card text-center p-3">
+            <h4>HTML/CSS</h4>
+            <div class="progress">
+              <div class="progress-bar bg-primary animate-progress" role="progressbar" style="width: 0%;" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="skill-card glass-card text-center p-3">
+            <h4>MongoDB</h4>
+            <div class="progress">
+              <div class="progress-bar bg-primary animate-progress" role="progressbar" style="width: 0%;" data-width="75" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="skill-card glass-card text-center p-3">
+            <h4>Deep Learning</h4>
+            <div class="progress">
+              <div class="progress-bar bg-primary animate-progress" role="progressbar" style="width: 0%;" data-width="80" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objective Section -->
+  <section id="objective" class="py-5 bg-light reveal" data-section="objective">
+    <div class="container">
+      <h2 class="text-center mb-4">Objective</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <p class="text-center">Aspiring AI Engineer passionate about integrating AI with full-stack web development. Aiming to build intelligent, scalable, and user-focused applications by combining machine learning, deep learning, and modern web technologies to solve real-world problems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiences Section -->
+  <section id="experiences" class="py-5 reveal" data-section="experiences">
+    <div class="container">
+      <h2 class="text-center mb-4">Experiences</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card glass-card">
+            <div class="card-body">
+              <h5 class="card-title">Web Development Intern</h5>
+              <h6 class="card-subtitle mb-2 text-muted">TechSonIx, May 2025 - Present</h6>
+              <p class="card-text">Performing various assessments using HTML, CSS, JavaScript, and Bootstrap. Gaining hands-on experience in developing web applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-5 bg-light reveal" data-section="achievements">
+    <div class="container">
+      <h2 class="text-center mb-4">Achievements</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card glass-card">
+            <div class="card-body">
+              <h5 class="card-title">SAP Hackfest Regional Round Winner</h5>
+              <p class="card-text">Won the regional round of the SAP Hackfest, showcasing innovative problem-solving.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card glass-card">
+            <div class="card-body">
+              <h5 class="card-title">Competitive Coding</h5>
+              <p class="card-text">Solved 200+ coding problems on platforms like LeetCode and HackerRank.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card glass-card">
+            <div class="card-body">
+              <h5 class="card-title">IEEE Xtreme Competition</h5>
+              <p class="card-text">Participated and scored 900 points in the IEEE Xtreme competition.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card glass-card">
+            <div class="card-body">
+              <h5 class="card-title">Tredence Hackathon Finalist</h5>
+              <p class="card-text">Qualified as one of the final round teams in the Tredence Hackathon from my institute.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mb-4">
+          <div class="card glass-card">
+            <div class="card-body">
+              <h5 class="card-title">Publication</h5>
+              <p class="card-text">Published a conference paper titled "Comparative Analysis of Machine Learning, Deep Learning, and Statistical Models on Credit Risk Prediction" on IEEE Xplore (DOI: 10.1109/AIDE64228.2025.10987509) on 12th May 2025.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="py-5 reveal" data-section="certificates">
+    <div class="container">
+      <h2 class="text-center mb-4">Certificates</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card glass-card">
+            <div class="card-body">
+              <h5 class="card-title">Data Science for Engineers</h5>
+              <p class="card-text">Issued by IIT Madras on Oct 2024.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card glass-card">
+            <div class="card-body">
+              <h5 class="card-title">Python for Data Science and Machine Learning Bootcamp</h5>
+              <p class="card-text">Issued by Udemy on Jul 2024.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card glass-card">
+            <div class="card-body">
+              <h5 class="card-title">The Complete Python Bootcamp from Zero to Hero</h5>
+              <p class="card-text">Issued by Udemy on Feb 2024.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card glass-card">
+            <div class="card-body">
+              <h5 class="card-title">Python Data Structures and Algorithms</h5>
+              <p class="card-text">Issued by Infosys on Aug 2024.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5 reveal" data-section="education">
+    <div class="container">
+      <h2 class="text-center mb-4">Education</h2>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-content glass-card">
+            <h5>Bachelor of Technology (CSE - AI)</h5>
+            <h6 class="text-muted">Amrita Vishwa Vidyapeetham, Amaravati, AP | Expected 2026</h6>
+            <p>CGPA: 8.69</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-content glass-card">
+            <h5>HSLC (12th)</h5>
+            <h6 class="text-muted">Viswasai Educational Institutions, Nellore, AP | 2020 - 2022</h6>
+            <p>Percentage: 91.1%</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light reveal" data-section="contact">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="pragnesheddygajjala1234@gmail.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="formFeedback" class="mt-3"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3" data-section="footer">
+    <p>© 2025 Gajjala Pragnesh Reddy. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
